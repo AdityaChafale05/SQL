@@ -1,6 +1,6 @@
--- use placement_portal ;
+ use placement_portal ;
 -- create DATABASE Data ;
-
+/*
 create table Student (
 -- Personal Details
 	StudID int primary key ,
@@ -22,5 +22,30 @@ create table Student (
 
 -- Audit
 	Last_Updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+*/
+
+create table Companies (
+	Company_id int primary key auto_increment,
+	Company_name varchar(50) not null,
+	Company_type varchar(50),
+	Industry_sector varchar(50) ,
+
+-- Location 
+	City varchar(50) not null,
+	State varchar(50),
+	Zipcode varchar(10),
+	Country varchar(50) default 'India',
+
+-- Contact
+	Contact_email varchar(100) unique not null ,
+	Contact_phone varchar(20) ,
+	Hr_contact varchar(50) not null ,
+	is_active boolean default True ,
+
+-- Audit
+	last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
