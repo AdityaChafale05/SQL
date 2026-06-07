@@ -1,3 +1,25 @@
+# College Placement Portal Database
+------
+
+## Project Overview
+
+- This project demonstrates the design and implementation of a College Placement Portal Database using SQL.
+
+## SQL Concepts Used
+
+- CREATE TABLE
+- ALTER TABLE
+- INSERT
+- UPDATE
+- DELETE
+- PRIMARY KEY
+- FOREIGN KEY
+- UNIQUE
+- CHECK
+- NOT NULL
+
+
+
 ## Table Schema 
 
 | Table | Primary Key | Foreign Keys | Key/Attribute Columns |
