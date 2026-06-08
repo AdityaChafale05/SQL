@@ -30,3 +30,13 @@
 | **Applications** | `application_id` | `student_id` ➔ `Students(student_id)` <br> `job_id` ➔ `Jobs(job_id)` | `application_date`, `status` |
 | **Interviews** | `interview_id` | `application_id` ➔ `Applications(application_id)` | `interview_date`, `interviewer_name` |
 | **Offers** | `offer_id` | `application_id` ➔ `Applications(application_id)` | `salary`, `start_date`, `status` |
+
+
+
+erDiagram
+    Students ||--|{ Applications : places
+    Jobs ||--|{ Applications : requires
+    Companies ||--|{ Jobs : posts
+    Applications ||--|| Interviews : schedules
+    Students ||--|{ Offers : receives
+    Companies ||--|{ Offers : extends
