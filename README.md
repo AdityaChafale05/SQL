@@ -66,5 +66,20 @@ erDiagram
          │                            │ 1
    ┌─────▼──────┐               ┌─────▼──────┐
    │ Interviews │               │ Interviews │
-   └────────────┘               └────────────┘
+   └────────────┘               └────────────
+
+
+## Project Structure
+
+placement-portal-database/
+
+├── README.md
+
+├── schema.sql
+
+├── sample_data.sql
+
+├── queries.sql
+
+└── ER_diagram.png
 
