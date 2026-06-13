@@ -83,3 +83,13 @@ placement-portal-database/
 
 └── ER_diagram.png
 
+## Learning Outcomes
+
+After completing this project I learned:
+
+- Relational database design
+- SQL query writing
+- Data normalization
+- Joins and subqueries
+- Database constraints
+- Transaction management
