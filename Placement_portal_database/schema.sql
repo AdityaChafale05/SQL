@@ -27,6 +27,7 @@ create table Student (
 
 */
 
+/*
 create table Companies (
 	Company_id int primary key auto_increment,
 	Company_name varchar(50) not null,
@@ -49,3 +50,17 @@ create table Companies (
 	last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
+
+*/
+
+ create table Job (
+	JobID INT PRIMARY KEY,
+    Company_id INT,
+    JobRole VARCHAR(100),
+    EligibilityCGPA DECIMAL(3,2),
+    Salary int ,
+    Openings INT,
+    FOREIGN KEY (Company_id)
+        REFERENCES Companies(Company_id)
+ );
+ 
