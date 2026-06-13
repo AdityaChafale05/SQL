@@ -52,7 +52,7 @@ create table Companies (
 );
 
 */
-
+/*
  create table Job (
 	JobID INT PRIMARY KEY,
     Company_id INT,
@@ -63,4 +63,15 @@ create table Companies (
     FOREIGN KEY (Company_id)
         REFERENCES Companies(Company_id)
  );
+ */
  
+ create table Applications (
+	ApplicationID int primary key ,
+    foreign key (JobID)
+		references Job(JobID),
+    foreign key (StudID)
+		references Student(StudID),
+    Status varchar(50),
+    ResumeURL varchar(255),
+    EligibilityCheck boolean
+ );
