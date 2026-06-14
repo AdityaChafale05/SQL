@@ -65,13 +65,25 @@ create table Companies (
  );
  */
  
- create table Applications (
-	ApplicationID int primary key ,
-    foreign key (JobID)
-		references Job(JobID),
-    foreign key (StudID)
-		references Student(StudID),
-    Status varchar(50),
-    ResumeURL varchar(255),
-    EligibilityCheck boolean
- );
+
+
+CREATE TABLE Applications (
+    ApplicationID INT PRIMARY KEY AUTO_INCREMENT, 
+    JobID INT NOT NULL,
+    StudID INT NOT NULL,
+    ApplicationDate DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    ResumeURL VARCHAR(255),
+    CoverLetterURL VARCHAR(255), 
+    EligibilityCheck BOOLEAN DEFAULT FALSE,
+    RejectionReason VARCHAR(255), 
+    
+    -- Foreign Keys
+    FOREIGN KEY (JobID) REFERENCES Job(JobID),
+    FOREIGN KEY (StudID) REFERENCES Student(StudID),
+    
+    /* -- Constraints
+    UNIQUE (JobID, StudID), -- Prevents duplicate applications
+    INDEX idx_status (StatusID), -- Improves query speed for filtering by status
+    INDEX idx_student (StudID) -- Improves query speed for student dashboards
+*
+);   
