@@ -1,6 +1,5 @@
- use placement_portal ;
--- create DATABASE Data ;
-/*
+
+
 create table Student (
 -- Personal Details
 	StudID int primary key ,
@@ -25,9 +24,9 @@ create table Student (
 
 );
 
-*/
 
-/*
+
+
 create table Companies (
 	Company_id int primary key auto_increment,
 	Company_name varchar(50) not null,
@@ -51,9 +50,9 @@ create table Companies (
 
 );
 
-*/
-/*
- create table Job (
+
+
+create table Job (
 	JobID INT PRIMARY KEY,
     Company_id INT,
     JobRole VARCHAR(100),
@@ -62,9 +61,9 @@ create table Companies (
     Openings INT,
     FOREIGN KEY (Company_id)
         REFERENCES Companies(Company_id)
- );
- */
- 
+);
+
+
 
 
 CREATE TABLE Applications (
@@ -79,11 +78,14 @@ CREATE TABLE Applications (
     
     -- Foreign Keys
     FOREIGN KEY (JobID) REFERENCES Job(JobID),
-    FOREIGN KEY (StudID) REFERENCES Student(StudID),
+    FOREIGN KEY (StudID) REFERENCES Student(StudID)
+    /*
+-- Constraints
+     UNIQUE (JobID, StudID), -- Prevents duplicate applications
+     INDEX idx_status (StatusID), -- Improves query speed for filtering by status
+     INDEX idx_student (StudID) -- Improves query speed for student dashboards
+	*/
+); 
     
-    /* -- Constraints
-    UNIQUE (JobID, StudID), -- Prevents duplicate applications
-    INDEX idx_status (StatusID), -- Improves query speed for filtering by status
-    INDEX idx_student (StudID) -- Improves query speed for student dashboards
-*
-);   
+    
+    
