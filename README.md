@@ -1,6 +1,10 @@
 # College Placement Portal Database
 ------
 
+![SQL](https://img.shields.io/badge/SQL-Database-blue)
+![DBMS](https://img.shields.io/badge/DBMS-Project-green)
+![Normalization](https://img.shields.io/badge/3NF-Normalized-orange)
+![Status](https://img.shields.io/badge/Status-InCompleted-success)
 ## Project Overview
 
 - This project demonstrates the design and implementation of a College Placement Portal Database using SQL.
@@ -93,3 +97,4 @@ After completing this project I learned:
 - Joins and subqueries
 - Database constraints
 - Transaction management
+
