@@ -105,6 +105,25 @@ Companies
 ---
 
 
+## 🖼️ Entity Relationship Diagram
+
+![ER Diagram](ER_diagram.png)
+
+
+---
+
+## 🗃️ Database Schema
+
+### Students
+
+| Column | Data Type |
+|----------|----------|
+| StudentID | INT |
+| FullName | VARCHAR(100) |
+| Email | VARCHAR(100) |
+| Branch | VARCHAR(50) |
+| CGPA | DECIMAL(3,2) |
+| GraduationYear | INT |
 ## Project Structure
 
 placement-portal-database/
