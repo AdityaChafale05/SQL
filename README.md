@@ -72,6 +72,38 @@ erDiagram
    │ Interviews │               │ Interviews │
    └────────────┘               └────────────
 
+---
+
+## 🏗️ Database Architecture
+
+```text
+Students
+    │
+    ▼
+Applications
+    │
+    ▼
+Jobs
+    │
+    ▼
+Companies
+
+Applications
+      │
+      ▼
+ Interviews
+
+Students
+      │
+      ▼
+   Offers
+      ▲
+      │
+Companies
+```
+
+---
+
 
 ## Project Structure
 
