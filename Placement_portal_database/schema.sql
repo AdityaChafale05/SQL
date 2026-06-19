@@ -8,12 +8,11 @@ create table Student (
 	Branch varchar(50) not null,
 	Email varchar(50) unique not null ,
 	Contact varchar(15)  not null,
-	CONSTRAINT chk_contact_format CHECK (Contact REGEXP '^(\+91)?[6-9][0-9]{9}$'),
-
+	CONSTRAINT chk_contact_format CHECK (TRIM(Contact) REGEXP '^[6-9][0-9]{9}$' OR TRIM(Contact) REGEXP '^\\+91[6-9][0-9]{9}$'),
 -- Academic 
-	CGPA decimal(3,2) check (CGPA between 0 and 10) ,
-	SSC_percent decimal(3,2) check (SSC_percent between 0 and 100),
-	HSC_percent decimal(3,2) check (HSC_percent between 0 and 100),
+	CGPA decimal(4,2) check (CGPA between 0 and 10) ,
+	SSC_percent decimal(5,2) check (SSC_percent between 0 and 100),
+	HSC_percent decimal(5,2) check (HSC_percent between 0 and 100),
 
 -- Eligibility
 	Active_backlog boolean default False,
