@@ -1,5 +1,6 @@
 use placement_portal ;
 
+/*
 -- values for Students 
 INSERT INTO Student (StudID, Roll_Number, Name, Branch, Email, Contact, CGPA, SSC_percent, HSC_percent, Active_backlog, Graduation_year) VALUES
 (101, 'CS2027001', 'Aarav Sharma', 'CSE', 'aarav.sharma@gmail.com', '9876543210', 8.50, 88.40, 85.20, FALSE, 2027),
@@ -22,3 +23,24 @@ INSERT INTO Student (StudID, Roll_Number, Name, Branch, Email, Contact, CGPA, SS
 (118, 'IT2026004', 'Riya Sen', 'IT', 'riya.sen@gmail.com', '8456789012', 7.65, 82.00, 80.50, FALSE, 2026),
 (119, 'EE2025003', 'Aaryan Kapoor', 'EE', 'aaryan.k@yahoo.com', '7567890123', 5.80, 63.50, 60.00, TRUE, 2025),
 (120, 'CS2027007', 'Anika Singh', 'CSE', 'anika.s@gmail.com', '6678901234', 9.40, 93.80, 92.00, FALSE, 2027);
+
+*/
+-- values for Companies 
+INSERT INTO Companies (Company_name, Company_type, Industry_sector, City, State, Zipcode, Contact_email, Contact_phone, Hr_contact, is_active) VALUES
+('Tata Consultancy Services (TCS)', 'MNC', 'IT Services', 'Mumbai', 'Maharashtra', '400001', 'campus.hiring@tcs.com', '022-67789999', 'Nitin Malhotra', TRUE),
+('Infosys Limited', 'MNC', 'IT Services', 'Bangalore', 'Karnataka', '560100', 'freshers.recruitment@infosys.com', '080-28520261', 'Priya Raghavan', TRUE),
+('Cognizant Technology Solutions', 'MNC', 'IT Consulting', 'Chennai', 'Tamil Nadu', '600096', 'india.campus@cognizant.com', '044-42096000', 'Suresh Kumar', TRUE),
+('Accenture India', 'MNC', 'Management Consulting', 'Hyderabad', 'Telangana', '500081', 'accenture.campus@accenture.com', '040-66670000', 'Meenakshi Iyer', TRUE),
+('Wipro Limited', 'MNC', 'IT & Software', 'Bangalore', 'Karnataka', '560035', 'campus.wipro@wipro.com', '080-46726000', 'Rahul Deshmukh', TRUE),
+('Amazon Development Centre', 'Product Giant', 'E-commerce & Cloud', 'Hyderabad', 'Telangana', '500032', 'amazon-university@amazon.com', '040-41513000', 'Amit Saxena', TRUE),
+('Microsoft India', 'Product Giant', 'Software Production', 'Gurgaon', 'Haryana', '122002', 'msindia.hr@microsoft.com', '0124-4158000', 'Sneha Kapoor', TRUE),
+('Deloitte India', 'Big Four', 'Financial Consulting', 'Mumbai', 'Maharashtra', '400013', 'deloitte.placement@deloitte.com', '022-61854000', 'Vikram Shah', TRUE),
+('Capgemini India', 'MNC', 'IT Consulting', 'Pune', 'Maharashtra', '411057', 'campus.recruitment@capgemini.com', '020-66991000', 'Anjali Joshi', TRUE),
+('Larsen & Toubro (L&T)', 'Conglomerate', 'Core Engineering', 'Mumbai', 'Maharashtra', '400072', 'heavyeng.hr@larsentoubro.com', '022-67051111', 'Rajesh Kulkarni', TRUE),
+('Reliance Industries Ltd', 'Conglomerate', 'Energy & Telecom', 'Navi Mumbai', 'Maharashtra', '400701', 'ril.talentacquisition@ril.com', '022-44770000', 'Sandeep Mishra', TRUE),
+('HDFC Bank Ltd', 'Private Banking', 'BFSI', 'Mumbai', 'Maharashtra', '400011', 'careers@hdfcbank.com', '022-66521000', 'Kriti Sharma', TRUE),
+('Zomato Limited', 'Unicorn Startup', 'Internet & FoodTech', 'Gurgaon', 'Haryana', '122003', 'campus@zomato.com', '0124-4227000', 'Gaurav Gupta', TRUE),
+('Ola Cabs (ANI Technologies)', 'Unicorn Startup', 'Mobility & EV', 'Bangalore', 'Karnataka', '560008', 'earlycareers@olacabs.com', '080-67331122', 'Rohan Verma', TRUE),
+('Tech Mahindra', 'MNC', 'Telecommunications & IT', 'Pune', 'Maharashtra', '411004', 'campus.hiring@techmahindra.com', '020-66018100', 'Divya Nair', TRUE);
+
+
