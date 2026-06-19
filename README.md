@@ -1,6 +1,10 @@
 # College Placement Portal Database
 ------
 
+![SQL](https://img.shields.io/badge/SQL-Database-blue)
+![DBMS](https://img.shields.io/badge/DBMS-Project-green)
+![Normalization](https://img.shields.io/badge/3NF-Normalized-orange)
+![Status](https://img.shields.io/badge/Status-InCompleted-success)
 ## Project Overview
 
 - This project demonstrates the design and implementation of a College Placement Portal Database using SQL.
@@ -68,7 +72,58 @@ erDiagram
    │ Interviews │               │ Interviews │
    └────────────┘               └────────────
 
+---
 
+## 🏗️ Database Architecture
+
+```text
+Students
+    │
+    ▼
+Applications
+    │
+    ▼
+Jobs
+    │
+    ▼
+Companies
+
+Applications
+      │
+      ▼
+ Interviews
+
+Students
+      │
+      ▼
+   Offers
+      ▲
+      │
+Companies
+```
+
+---
+
+
+## 🖼️ Entity Relationship Diagram
+
+![ER Diagram](ER_diagram.png)
+
+
+---
+
+## 🗃️ Database Schema
+
+### Students
+
+| Column | Data Type |
+|----------|----------|
+| StudentID | INT |
+| FullName | VARCHAR(100) |
+| Email | VARCHAR(100) |
+| Branch | VARCHAR(50) |
+| CGPA | DECIMAL(3,2) |
+| GraduationYear | INT |
 ## Project Structure
 
 placement-portal-database/
@@ -93,3 +148,4 @@ After completing this project I learned:
 - Joins and subqueries
 - Database constraints
 - Transaction management
+
