@@ -37,41 +37,6 @@
 
 
 
-erDiagram
-    Students ||--|{ Applications : places
-    Jobs ||--|{ Applications : requires
-    Companies ||--|{ Jobs : posts
-    Applications ||--|| Interviews : schedules
-    Students ||--|{ Offers : receives
-    Companies ||--|{ Offers : extends
-
-
-
-  ┌──────────────┐             ┌──────────────┐
-  │   Students   │             │  Companies   │
-  └──────┬───────┘             └──────┬───────┘
-         │ 1                          │ 1
-         │                            │
-         ├────────────────────────┐   │
-         │ 1                      │   │
-         │                        │   │ ∞
-   ┌─────▼──────┐                 │ ┌─▼──────────┐
-   │   Offers   │                 │ │    Jobs    │
-   └─────▲──────┘                 │ └─┬──────────┘
-         │ ∞                      │   │ 1
-         │                        │   │
-         ├────────────────────────┘   │ ∞
-         │                            │
-         │ ∞                    ┌─────▼──────┐
-   ┌─────▼──────┐               │Applications│
-   │Applications│               └─────┬──────┘
-   └─────┬──────┘                     │ 1
-         │ 1                          │
-         │                            │ 1
-   ┌─────▼──────┐               ┌─────▼──────┐
-   │ Interviews │               │ Interviews │
-   └────────────┘               └────────────
-
 ---
 
 ## 🏗️ Database Architecture
