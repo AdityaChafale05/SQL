@@ -46,7 +46,7 @@ INSERT INTO Companies (Company_name, Company_type, Industry_sector, City, State,
 ('Tech Mahindra', 'MNC', 'Telecommunications & IT', 'Pune', 'Maharashtra', '411004', 'campus.hiring@techmahindra.com', '020-66018100', 'Divya Nair', TRUE);
 */
 
-
+/*
 -- values for Job 
 INSERT INTO Job (JobID, Company_id, JobRole, EligibilityCGPA, Salary, Openings) VALUES
 (101, 1, 'Software Engineer', 7.50, 800000, 15),
@@ -59,5 +59,21 @@ INSERT INTO Job (JobID, Company_id, JobRole, EligibilityCGPA, Salary, Openings) 
 (108, 4, 'Backend Developer', 7.20, 850000, 12),
 (109, 5, 'Cloud Architect', 8.50, 1500000, 2),
 (110, 5, 'Security Analyst', 7.80, 1000000, 6);   
+*/
 
+-- values for Application
+INSERT INTO Applications (JobID, StudID, ApplicationDate, ResumeURL, CoverLetterURL, EligibilityCheck, RejectionReason) VALUES
+-- Eligible High Performers (Applied for high CGPA roles)
+(101, 101, '2026-06-20 09:15:00', 'https://storage.college.edu/resumes/101_resume.pdf', 'https://storage.college.edu/cl/101_cl.pdf', TRUE, NULL), 
+(103, 102, '2026-06-20 10:30:00', 'https://storage.college.edu/resumes/102_resume.pdf', 'https://storage.college.edu/cl/102_cl.pdf', TRUE, NULL), 
+(109, 106, '2026-06-20 11:00:00', 'https://storage.college.edu/resumes/106_resume.pdf', 'https://storage.college.edu/cl/106_cl.pdf', TRUE, NULL), 
+(109, 112, '2026-06-20 11:05:00', 'https://storage.college.edu/resumes/112_resume.pdf', 'https://storage.college.edu/cl/112_cl.pdf', TRUE, NULL), 
+(101, 105, '2026-06-20 12:15:00', 'https://storage.college.edu/resumes/105_resume.pdf', NULL, FALSE, 'CGPA 6.20 below 7.50 requirement'),
+(109, 109, '2026-06-20 12:30:00', 'https://storage.college.edu/resumes/109_resume.pdf', NULL, FALSE, 'CGPA 5.90 below 8.50 requirement'),
+(103, 103, '2026-06-20 13:00:00', 'https://storage.college.edu/resumes/103_resume.pdf', NULL, FALSE, 'CGPA 6.80 below 8.00 requirement'),
+(102, 104, '2026-06-20 14:10:00', 'https://storage.college.edu/resumes/104_resume.pdf', 'https://storage.college.edu/cl/104_cl.pdf', TRUE, 'Position filled by internal candidate'),
+(104, 107, '2026-06-20 14:45:00', 'https://storage.college.edu/resumes/107_resume.pdf', NULL, TRUE, 'Did not clear technical assessment'),
+(105, 108, '2026-06-20 15:05:00', 'https://storage.college.edu/resumes/108_resume.pdf', NULL, FALSE, NULL), 
+(107, 110, '2026-06-20 15:12:00', 'https://storage.college.edu/resumes/110_resume.pdf', 'https://storage.college.edu/cl/110_cl.pdf', FALSE, NULL), 
+(108, 116, '2026-06-20 15:20:00', 'https://storage.college.edu/resumes/116_resume.pdf', 'https://storage.college.edu/cl/116_cl.pdf', FALSE, NULL); 
 
