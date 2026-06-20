@@ -1,6 +1,4 @@
-use placement_portal ;
 
-/*
 -- values for Students 
 INSERT INTO Student (StudID, Roll_Number, Name, Branch, Email, Contact, CGPA, SSC_percent, HSC_percent, Active_backlog, Graduation_year) VALUES
 (101, 'CS2027001', 'Aarav Sharma', 'CSE', 'aarav.sharma@gmail.com', '9876543210', 8.50, 88.40, 85.20, FALSE, 2027),
@@ -24,9 +22,9 @@ INSERT INTO Student (StudID, Roll_Number, Name, Branch, Email, Contact, CGPA, SS
 (119, 'EE2025003', 'Aaryan Kapoor', 'EE', 'aaryan.k@yahoo.com', '7567890123', 5.80, 63.50, 60.00, TRUE, 2025),
 (120, 'CS2027007', 'Anika Singh', 'CSE', 'anika.s@gmail.com', '6678901234', 9.40, 93.80, 92.00, FALSE, 2027);
 
-*/
 
-/*
+
+
 -- values for Companies 
 INSERT INTO Companies (Company_name, Company_type, Industry_sector, City, State, Zipcode, Contact_email, Contact_phone, Hr_contact, is_active) VALUES
 ('Tata Consultancy Services (TCS)', 'MNC', 'IT Services', 'Mumbai', 'Maharashtra', '400001', 'campus.hiring@tcs.com', '022-67789999', 'Nitin Malhotra', TRUE),
@@ -44,9 +42,9 @@ INSERT INTO Companies (Company_name, Company_type, Industry_sector, City, State,
 ('Zomato Limited', 'Unicorn Startup', 'Internet & FoodTech', 'Gurgaon', 'Haryana', '122003', 'campus@zomato.com', '0124-4227000', 'Gaurav Gupta', TRUE),
 ('Ola Cabs (ANI Technologies)', 'Unicorn Startup', 'Mobility & EV', 'Bangalore', 'Karnataka', '560008', 'earlycareers@olacabs.com', '080-67331122', 'Rohan Verma', TRUE),
 ('Tech Mahindra', 'MNC', 'Telecommunications & IT', 'Pune', 'Maharashtra', '411004', 'campus.hiring@techmahindra.com', '020-66018100', 'Divya Nair', TRUE);
-*/
 
-/*
+
+
 -- values for Job 
 INSERT INTO Job (JobID, Company_id, JobRole, EligibilityCGPA, Salary, Openings) VALUES
 (101, 1, 'Software Engineer', 7.50, 800000, 15),
@@ -59,11 +57,10 @@ INSERT INTO Job (JobID, Company_id, JobRole, EligibilityCGPA, Salary, Openings) 
 (108, 4, 'Backend Developer', 7.20, 850000, 12),
 (109, 5, 'Cloud Architect', 8.50, 1500000, 2),
 (110, 5, 'Security Analyst', 7.80, 1000000, 6);   
-*/
+
 
 -- values for Application
 INSERT INTO Applications (JobID, StudID, ApplicationDate, ResumeURL, CoverLetterURL, EligibilityCheck, RejectionReason) VALUES
--- Eligible High Performers (Applied for high CGPA roles)
 (101, 101, '2026-06-20 09:15:00', 'https://storage.college.edu/resumes/101_resume.pdf', 'https://storage.college.edu/cl/101_cl.pdf', TRUE, NULL), 
 (103, 102, '2026-06-20 10:30:00', 'https://storage.college.edu/resumes/102_resume.pdf', 'https://storage.college.edu/cl/102_cl.pdf', TRUE, NULL), 
 (109, 106, '2026-06-20 11:00:00', 'https://storage.college.edu/resumes/106_resume.pdf', 'https://storage.college.edu/cl/106_cl.pdf', TRUE, NULL), 
