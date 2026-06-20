@@ -25,6 +25,8 @@ INSERT INTO Student (StudID, Roll_Number, Name, Branch, Email, Contact, CGPA, SS
 (120, 'CS2027007', 'Anika Singh', 'CSE', 'anika.s@gmail.com', '6678901234', 9.40, 93.80, 92.00, FALSE, 2027);
 
 */
+
+/*
 -- values for Companies 
 INSERT INTO Companies (Company_name, Company_type, Industry_sector, City, State, Zipcode, Contact_email, Contact_phone, Hr_contact, is_active) VALUES
 ('Tata Consultancy Services (TCS)', 'MNC', 'IT Services', 'Mumbai', 'Maharashtra', '400001', 'campus.hiring@tcs.com', '022-67789999', 'Nitin Malhotra', TRUE),
@@ -42,5 +44,20 @@ INSERT INTO Companies (Company_name, Company_type, Industry_sector, City, State,
 ('Zomato Limited', 'Unicorn Startup', 'Internet & FoodTech', 'Gurgaon', 'Haryana', '122003', 'campus@zomato.com', '0124-4227000', 'Gaurav Gupta', TRUE),
 ('Ola Cabs (ANI Technologies)', 'Unicorn Startup', 'Mobility & EV', 'Bangalore', 'Karnataka', '560008', 'earlycareers@olacabs.com', '080-67331122', 'Rohan Verma', TRUE),
 ('Tech Mahindra', 'MNC', 'Telecommunications & IT', 'Pune', 'Maharashtra', '411004', 'campus.hiring@techmahindra.com', '020-66018100', 'Divya Nair', TRUE);
+*/
+
+
+-- values for Job 
+INSERT INTO Job (JobID, Company_id, JobRole, EligibilityCGPA, Salary, Openings) VALUES
+(101, 1, 'Software Engineer', 7.50, 800000, 15),
+(102, 1, 'Data Analyst', 7.00, 600000, 5),
+(103, 2, 'Product Manager', 8.00, 1200000, 3),
+(104, 2, 'QA Engineer', 6.50, 500000, 10),
+(105, 3, 'DevOps Engineer', 7.50, 950000, 8),
+(106, 3, 'System Administrator', 6.00, 450000, 4),
+(107, 4, 'Frontend Developer', 7.20, 750000, 12),
+(108, 4, 'Backend Developer', 7.20, 850000, 12),
+(109, 5, 'Cloud Architect', 8.50, 1500000, 2),
+(110, 5, 'Security Analyst', 7.80, 1000000, 6);   
 
 
